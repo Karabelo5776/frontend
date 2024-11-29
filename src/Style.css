@@ -1,0 +1,697 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.header .navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.header .logout-button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header .logout-button:hover {
+    background-color: #e84343;
+}
+
+/* Form Styles */
+.product-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.product-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #0f0d0d;
+    border-radius: 5px;
+}
+
+.product-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation Styles */
+nav {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Table Styles */
+.product-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.product-table th, .product-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.product-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Button Styles */
+.edit {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit:hover {
+    background-color: #e0a800;
+}
+
+.sell {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sell:hover {
+    background-color: #218838;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete:hover {
+    background-color: #c82333;
+}
+
+/* Authentication Styles */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.auth-box {
+    width: 300px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.auth-box h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #333;
+}
+
+.auth-box p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.toggle-link {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 0.2rem;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-form button {
+        width: 100%;
+    }
+
+    .product-table th, .product-table td {
+        padding: 8px;
+    }
+}
+
+
+
+
+
+
+
+/* User Management Styles */
+.user-management {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-management h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.user-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-form button:hover {
+    background-color: #0056b3;
+}
+
+/* User Table Styles */
+.user-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Action Buttons in User Table */
+.user-table .edit-user, .user-table .delete-user {
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-table .edit-user {
+    background-color: #ffc107;
+}
+
+.user-table .edit-user:hover {
+    background-color: #e0a800;
+}
+
+.user-table .delete-user {
+    background-color: #dc3545;
+}
+
+.user-table .delete-user:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Styles for User Management */
+@media (max-width: 600px) {
+    .user-management {
+        padding: 10px;
+    }
+
+    .user-form {
+        max-width: 100%;
+    }
+
+    .user-table th, .user-table td {
+        padding: 8px;
+    }
+}
+
+
+
+
+
+
+/* UserManagement.css */
+.user-management {
+    padding: 2rem;
+    min-height: 100vh;
+    background: #f0f2f5;
+    color: #2c3e50;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+      8px 8px 15px rgba(163, 177, 198, 0.6),
+      -8px -8px 15px rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    animation: slideDown 0.5s ease-out;
+  }
+  
+  #myuser {
+    font-size: 2rem;
+    margin: 0;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 3s infinite;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .navigation ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    background: #e0e5ec;
+    box-shadow: 
+      inset 3px 3px 5px rgba(163, 177, 198, 0.5),
+      inset -3px -3px 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  .logout-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background: #e74c3c;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 
+      5px 5px 10px rgba(163, 177, 198, 0.5),
+      -5px -5px 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .logout-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      7px 7px 15px rgba(163, 177, 198, 0.5),
+      -7px -7px 15px rgba(255, 255, 255, 0.8);
+  }
+  
+  .error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  .user-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 
+      8px 8px 15px rgba(163, 177, 198, 0.5),
+      -8px -8px 15px rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .user-form input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #f0f2f5;
+    box-shadow: 
+      inset 3px 3px 5px rgba(163, 177, 198, 0.5),
+      inset -3px -3px 5px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+  }
+  
+  .user-form input:focus {
+    outline: none;
+    box-shadow: 
+      inset 4px 4px 6px rgba(163, 177, 198, 0.6),
+      inset -4px -4px 6px rgba(255, 255, 255, 0.9);
+  }
+  
+  .user-form button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 
+      5px 5px 10px rgba(163, 177, 198, 0.5),
+      -5px -5px 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .user-form button:hover {
+    transform: translateY(-2px);
+    background: #2980b9;
+  }
+  
+  table {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+      8px 8px 15px rgba(163, 177, 198, 0.5),
+      -8px -8px 15px rgba(255, 255, 255, 0.8);
+    border-collapse: collapse;
+    overflow: hidden;
+    animation: slideUp 0.5s ease-out;
+    color: #fff;
+  }
+  
+  thead {
+    background: #3498db;
+    color: white;
+  }
+  
+  th, td {
+    padding: 1.2rem;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: 600;
+  }
+  
+  tr {
+    transition: all 0.3s ease;
+  }
+  
+  tbody tr:hover {
+    background: #f8f9fa;
+  }
+  
+  td button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  td button:first-child {
+    background: #2ecc71;
+    color: white;
+  }
+  
+  td button:last-child {
+    background: #e74c3c;
+    color: white;
+  }
+  
+  td button:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      3px 3px 5px rgba(163, 177, 198, 0.5),
+      -3px -3px 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+  }
+  
+  @keyframes gradientFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  
+    .navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .navigation ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .user-form {
+      flex-direction: column;
+    }
+  
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+  
+    td button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .user-management {
+      background: #1a1a1a;
+      color: #ffffff;
+    }
+  
+    .header {
+      background: #2c2c2c;
+      box-shadow: 
+        8px 8px 15px rgba(0, 0, 0, 0.5),
+        -8px -8px 15px rgba(255, 255, 255, 0.05);
+    }
+  
+    .navigation a {
+      color: #ffffff;
+    }
+  
+    .navigation a:hover {
+      background: #3c3c3c;
+    }
+  
+    .user-form, table {
+      background: #2c2c2c;
+      box-shadow: 
+        8px 8px 15px rgba(0, 0, 0, 0.5),
+        -8px -8px 15px rgba(255, 255, 255, 0.05);
+    }
+  
+    .user-form input {
+      background: #3c3c3c;
+      color: #ffffff;
+    }
+  
+    tbody tr:hover {
+      background: #3c3c3c;
+    }
+  }
